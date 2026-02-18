@@ -25,7 +25,7 @@ struct SparklineView: View {
                     }
                 }
             }
-            .stroke(lineColor, style: StrokeStyle(lineWidth: 2, lineJoin: .round, lineCap: .round))
+            .stroke(lineColor, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
         }
         .frame(height: 50)
     }

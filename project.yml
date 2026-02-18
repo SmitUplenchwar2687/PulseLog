@@ -1,0 +1,32 @@
+name: PulseLog
+options:
+  minimumXcodeGenVersion: 2.38.0
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: 5.9
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
+
+targets:
+  PulseLog:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: PulseLog
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pulselog.app
+        PRODUCT_NAME: PulseLog
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: PulseLog
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIRequiresFullScreen: NO
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+    scheme:
+      testTargets: []

@@ -8,7 +8,7 @@ struct WorkoutInput {
     var reps: Int = 10
     var weight: Double = 20
     var durationMinutes: Double = 30
-    var date: Date = .now
+    var date: Date = Date()
 }
 
 @MainActor
@@ -18,8 +18,8 @@ final class WorkoutTrackerViewModel: TrackedViewModel {
     @Published private(set) var canLoadMore = true
     @Published var selectedType = "All"
     @Published var useDateFilter = false
-    @Published var startDate = Calendar.current.date(byAdding: .month, value: -1, to: .now) ?? .now
-    @Published var endDate = .now
+    @Published var startDate = Calendar.current.date(byAdding: .month, value: -1, to: Date()) ?? Date()
+    @Published var endDate = Date()
     @Published var errorMessage: String?
 
     let pageSize = 20

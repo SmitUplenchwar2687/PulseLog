@@ -9,9 +9,13 @@ final class MemoryDashboardViewModel: TrackedViewModel {
     private let monitor: MemoryMonitor
     private var syncTask: Task<Void, Never>?
 
-    init(monitor: MemoryMonitor = .shared) {
+    init(monitor: MemoryMonitor) {
         self.monitor = monitor
         super.init(typeName: String(describing: MemoryDashboardViewModel.self))
+    }
+
+    convenience init() {
+        self.init(monitor: MemoryMonitor.shared)
     }
 
     func start() {

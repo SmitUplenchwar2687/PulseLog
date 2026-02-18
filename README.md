@@ -26,13 +26,21 @@ PulseLog is a SwiftUI + SwiftData personal fitness tracker with deep built-in ob
 - `PulseLog/Components/`
 - `PulseLog/Utilities/`
 
-## Add to Xcode
+## Open in Xcode
+
+Preferred (XcodeGen):
+
+1. Install XcodeGen (if needed): `brew install xcodegen`
+2. From repo root run: `xcodegen generate`
+3. Open: `open PulseLog.xcodeproj`
+4. Build and run
+
+Manual fallback:
 
 1. Create a new iOS App project in Xcode (`iOS 17+`) named `PulseLog`.
 2. Delete the default template Swift files.
-3. Drag the `PulseLog/` folder from this repository into the Xcode target.
-4. Ensure these frameworks are available: SwiftUI, SwiftData, Charts, PhotosUI, OSLog, ImageIO.
-5. Build and run.
+3. Drag the `PulseLog/` folder from this repository into the app target.
+4. Build and run.
 
 ## Debug tools
 
